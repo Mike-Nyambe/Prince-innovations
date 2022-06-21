@@ -1,0 +1,74 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 6rem;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--text-primary);
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header .icons div {
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover {
+    color: var(--main-color);
+}
+
+#menu-btn {
+    display: none;
+}
+
+.fa-regular {
+    height: 4rem;
+    width: 5rem;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.823), rgba(0, 0, 0, 0.6)), url(/images/header1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 80rem;
+}
+
+.home .content h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--text-primary);
+}
+
+.home .content p {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee;
+}
