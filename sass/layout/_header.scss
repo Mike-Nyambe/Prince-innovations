@@ -4,6 +4,7 @@
     justify-content: space-between;
     padding: 1.5rem 4%;
     position: fixed;
+    // background-color: rgba(0, 0, 0, 0.564);
     top: 0;
     left: 0;
     right: 0;
@@ -18,6 +19,7 @@
     margin: 0 1rem;
     font-size: 1.6rem;
     color: var(--text-primary);
+    text-transform: uppercase;
 }
 
 .header .navbar a:hover {

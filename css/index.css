@@ -16,7 +16,8 @@
   outline: none;
   border: none;
   text-decoration: none;
-  transition: .2s linear; }
+  transition: .2s linear;
+  line-height: 1.5; }
 
 html {
   font-size: 62.5%;
@@ -72,21 +73,23 @@ section {
 .btn:hover {
   opacity: 0.6; }
 
-.main_section {
-  padding-bottom: 12rem; }
-  .main_section_main--heading {
-    margin-top: 4rem; }
-    .main_section_main--heading h4 {
-      font-size: 2.2rem;
-      color: var(--lower-color);
-      text-transform: uppercase;
-      text-align: center; }
-  .main_section_top--discription {
-    padding: 2rem 0; }
-    .main_section_top--discription p {
-      font-size: 1.8rem;
-      text-transform: capitalize;
-      text-align: center; }
+.main_section_main--heading {
+  margin-top: 4rem; }
+  .main_section_main--heading h4 {
+    font-size: 2.2rem;
+    color: var(--lower-color);
+    text-transform: uppercase;
+    text-align: center; }
+
+.main_section_top--discription {
+  padding: 2rem 0; }
+  .main_section_top--discription p {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    text-align: center; }
+
+.padding-bottom-util {
+  padding-bottom: 7rem; }
 
 .header {
   display: flex;
@@ -105,7 +108,8 @@ section {
 .header .navbar a {
   margin: 0 1rem;
   font-size: 1.6rem;
-  color: var(--text-primary); }
+  color: var(--text-primary);
+  text-transform: uppercase; }
 
 .header .navbar a:hover {
   color: var(--main-color);
@@ -200,7 +204,8 @@ section {
     width: 100%; }
 
 .service_section .inner_card_section {
-  padding: 0 12rem; }
+  padding-left: 12rem;
+  padding-right: 12rem; }
 
 .service_section_content-cards {
   background-color: #fff;
@@ -216,16 +221,33 @@ section {
     font-size: var(--general-font-size);
     line-height: 2rem; }
 
+.why_us {
+  background-image: linear-gradient(rgba(0, 35, 175, 0.823), rgba(0, 35, 175, 0.823)), url(/images/why-work.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  .why_us .why-us-util {
+    padding: 20rem 0; }
+  .why_us_content--inner {
+    text-align: center;
+    color: #fff; }
+    .why_us_content--inner h2 {
+      font-size: 2.6rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding-bottom: 1rem; }
+    .why_us_content--inner p {
+      font-size: var(--general-font-size); }
+
 /* media queries  */
 @media (max-width: 991px) {
   html {
     font-size: 55%; }
   .header {
     padding: 1.5rem 2rem; }
-  section {
-    padding: 2rem; }
   .service_section .inner_card_section {
-    padding: 0 4rem; } }
+    padding-left: 4rem;
+    padding-right: 4rem; } }
 
 @media (max-width: 768px) {
   .cta-btn {
@@ -259,13 +281,16 @@ section {
   .home .content p {
     font-size: 1.5rem; }
   .service_section .inner_card_section {
-    padding: 0 2rem; } }
+    padding-left: 2rem;
+    padding-right: 2rem; } }
 
 @media (max-width: 450px) {
   html {
     font-size: 50%; }
   .service_section .inner_card_section {
-    padding: 0; } }
+    padding: 0; }
+  .why_us_content--inner {
+    text-align: left; } }
 
 .row {
   box-sizing: border-box;
