@@ -4,7 +4,9 @@
   --black: #13131a;
   --bg: #010103;
   --border: .1rem solid rgba(255, 255, 255, .3);
-  --text-primary: #fff; }
+  --text-primary: #fff;
+  --lower-color: #999;
+  --general-font-size: 1.7rem; }
 
 * {
   font-family: 'Roboto', sans-serif;
@@ -14,7 +16,6 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
   transition: .2s linear; }
 
 html {
@@ -70,6 +71,21 @@ section {
 
 .btn:hover {
   opacity: 0.6; }
+
+.main_section_main--heading {
+  margin-top: 4rem; }
+  .main_section_main--heading h4 {
+    font-size: 2.2rem;
+    color: var(--lower-color);
+    text-transform: uppercase;
+    text-align: center; }
+
+.main_section_top--discription {
+  padding: 2rem 0; }
+  .main_section_top--discription p {
+    font-size: var(--general-font-size);
+    text-transform: capitalize;
+    text-align: center; }
 
 .header {
   display: flex;
@@ -132,15 +148,18 @@ section {
   font-weight: lighter;
   line-height: 1.8;
   padding: 1rem 0;
-  color: #eee; }
+  color: #eee;
+  text-transform: capitalize; }
 
 .content-card-top {
-  background-color: #999;
+  background-color: #fff;
   padding: 1rem;
-  border-radius: 5px; }
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; }
   .content-card-top h4 {
     font-size: 1.8rem;
-    padding: 1rem 0; }
+    padding: 1rem 0;
+    text-transform: capitalize; }
   .content-card-top p {
     font-size: 1.6rem;
     line-height: 2rem; }
@@ -153,6 +172,30 @@ section {
     border: 1px solid #444;
     justify-content: center;
     align-items: center; }
+
+.about_section {
+  background-color: #fae5d3; }
+  .about_section_intro--paragraph {
+    margin-top: 4rem; }
+    .about_section_intro--paragraph p {
+      font-size: var(--general-font-size); }
+  .about_section_text_with--icons {
+    padding: 2rem 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center; }
+    .about_section_text_with--icons img {
+      height: 7rem;
+      width: 7rem; }
+    .about_section_text_with--icons .inner-text-icon p {
+      font-size: 1.4rem; }
+    .about_section_text_with--icons .inner-text-icon h5 {
+      font-size: 1.5rem;
+      text-transform: capitalize;
+      padding-bottom: 5px; }
+  .about_section_about--image img {
+    width: 100%; }
 
 /* media queries  */
 @media (max-width: 991px) {
