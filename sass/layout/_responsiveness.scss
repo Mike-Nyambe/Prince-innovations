@@ -10,6 +10,11 @@
     section {
         padding: 2rem;
     }
+    .service_section {
+        .inner_card_section {
+            padding: 0 4rem;
+        }
+    }
 }
 
 @media (max-width:768px) {
@@ -52,10 +57,20 @@
     .home .content p {
         font-size: 1.5rem;
     }
+    .service_section {
+        .inner_card_section {
+            padding: 0 2rem;
+        }
+    }
 }
 
 @media (max-width:450px) {
     html {
         font-size: 50%;
+    }
+    .service_section {
+        .inner_card_section {
+            padding: 0;
+        }
     }
 }

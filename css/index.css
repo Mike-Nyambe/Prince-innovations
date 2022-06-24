@@ -6,7 +6,7 @@
   --border: .1rem solid rgba(255, 255, 255, .3);
   --text-primary: #fff;
   --lower-color: #999;
-  --general-font-size: 1.7rem; }
+  --general-font-size: 1.6rem; }
 
 * {
   font-family: 'Roboto', sans-serif;
@@ -72,20 +72,21 @@ section {
 .btn:hover {
   opacity: 0.6; }
 
-.main_section_main--heading {
-  margin-top: 4rem; }
-  .main_section_main--heading h4 {
-    font-size: 2.2rem;
-    color: var(--lower-color);
-    text-transform: uppercase;
-    text-align: center; }
-
-.main_section_top--discription {
-  padding: 2rem 0; }
-  .main_section_top--discription p {
-    font-size: var(--general-font-size);
-    text-transform: capitalize;
-    text-align: center; }
+.main_section {
+  padding-bottom: 12rem; }
+  .main_section_main--heading {
+    margin-top: 4rem; }
+    .main_section_main--heading h4 {
+      font-size: 2.2rem;
+      color: var(--lower-color);
+      text-transform: uppercase;
+      text-align: center; }
+  .main_section_top--discription {
+    padding: 2rem 0; }
+    .main_section_top--discription p {
+      font-size: 1.8rem;
+      text-transform: capitalize;
+      text-align: center; }
 
 .header {
   display: flex;
@@ -153,6 +154,7 @@ section {
 
 .content-card-top {
   background-color: #fff;
+  height: 100%;
   padding: 1rem;
   border-radius: 5px;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; }
@@ -197,6 +199,23 @@ section {
   .about_section_about--image img {
     width: 100%; }
 
+.service_section .inner_card_section {
+  padding: 0 12rem; }
+
+.service_section_content-cards {
+  background-color: #fff;
+  height: 100%;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; }
+  .service_section_content-cards h4 {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    text-transform: capitalize; }
+  .service_section_content-cards p {
+    font-size: var(--general-font-size);
+    line-height: 2rem; }
+
 /* media queries  */
 @media (max-width: 991px) {
   html {
@@ -204,7 +223,9 @@ section {
   .header {
     padding: 1.5rem 2rem; }
   section {
-    padding: 2rem; } }
+    padding: 2rem; }
+  .service_section .inner_card_section {
+    padding: 0 4rem; } }
 
 @media (max-width: 768px) {
   .cta-btn {
@@ -236,11 +257,15 @@ section {
   .home .content h3 {
     font-size: 4.5rem; }
   .home .content p {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .service_section .inner_card_section {
+    padding: 0 2rem; } }
 
 @media (max-width: 450px) {
   html {
-    font-size: 50%; } }
+    font-size: 50%; }
+  .service_section .inner_card_section {
+    padding: 0; } }
 
 .row {
   box-sizing: border-box;
