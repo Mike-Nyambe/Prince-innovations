@@ -4,9 +4,6 @@
     html {
         font-size: 55%;
     }
-    .header {
-        padding: 1.5rem 2rem;
-    }
     .service_section {
         .inner_card_section {
             padding-left: 4rem;
@@ -16,33 +13,37 @@
 }
 
 @media (max-width:768px) {
-    .cta-btn {
+    nav .mainMenu {
+        height: 100vh;
+        font-size: 3.3rem;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #0E0AFF;
+        transition: top 1s ease 0s;
         display: none;
     }
-    #menu-btn {
-        display: inline-block;
-    }
-    .header .navbar {
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        background: var(--text-primary);
-        width: 30rem;
-        height: calc(100vh - 9.5rem);
-    }
-    .header .navbar.active {
-        right: 0;
-    }
-    .header .navbar a {
-        color: var(--black);
+    nav .mainMenu .closeMenu {
         display: block;
-        margin: 1.5rem;
-        padding: .5rem;
-        font-size: 2rem;
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
-    .header .search-form {
-        width: 90%;
-        right: 2rem;
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
     }
     .home {
         background-position: left;

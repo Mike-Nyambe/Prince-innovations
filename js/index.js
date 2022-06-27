@@ -1,29 +1,24 @@
-let navbar = document.querySelector('.navbar');
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+const menu_items = document.querySelectorAll('nav .mainMenu li a');
 
-document.querySelector('#menu-btn').onclick = () => {
-    navbar.classList.toggle('active');
-    searchForm.classList.remove('active');
-    cartItem.classList.remove('active');
+
+openMenu.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
+
+// close menu when you click on a menu item 
+menu_items.forEach(item => {
+    item.addEventListener('click', function() {
+        close();
+    })
+})
+
+function show() {
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
 }
 
-let searchForm = document.querySelector('.search-form');
-
-document.querySelector('#search-btn').onclick = () => {
-    searchForm.classList.toggle('active');
-    navbar.classList.remove('active');
-    cartItem.classList.remove('active');
-}
-
-let cartItem = document.querySelector('.cart-items-container');
-
-document.querySelector('#cart-btn').onclick = () => {
-    cartItem.classList.toggle('active');
-    navbar.classList.remove('active');
-    searchForm.classList.remove('active');
-}
-
-window.onscroll = () => {
-    navbar.classList.remove('active');
-    searchForm.classList.remove('active');
-    cartItem.classList.remove('active');
+function close() {
+    mainMenu.style.top = '-100%';
 }
