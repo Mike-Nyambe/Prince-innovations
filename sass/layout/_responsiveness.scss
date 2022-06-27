@@ -12,10 +12,17 @@
     }
 }
 
+@media (max-width:900px) {
+    .logo_img_about {
+        img {
+            display: none;
+        }
+    }
+}
+
 @media (max-width:768px) {
     nav .mainMenu {
         height: 100vh;
-        font-size: 3.3rem;
         position: fixed;
         top: 0px;
         right: 0px;
@@ -61,6 +68,9 @@
             padding-left: 2rem;
             padding-right: 2rem;
         }
+    }
+    .about_log {
+        display: none;
     }
 }
 

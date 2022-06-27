@@ -137,3 +137,22 @@ section {
     transform: scaleX(1);
     transform-origin: bottom center;
 }
+
+// =======================page banner ================================/
+.page_banner_main {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.823), rgba(0, 0, 0, 0.6)), url(/images/img-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    &_banner--content {
+        max-width: 80rem;
+        h3 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            color: var(--text-primary);
+        }
+    }
+}
