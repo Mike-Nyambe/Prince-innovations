@@ -303,6 +303,9 @@ nav .mainMenu .closeMenu,
     .why_us_content--inner p {
       font-size: var(--general-font-size); }
 
+.team_section {
+  padding: 0 16rem; }
+
 .card {
   position: relative;
   text-align: center;
@@ -363,6 +366,7 @@ a {
   padding-top: 7.5px; }
 
 .footer_section {
+  padding: 2rem 2%;
   background-color: #0E0AFF; }
   .footer_section .foot-util {
     padding: 5rem 0; }
@@ -388,16 +392,16 @@ a {
       color: #fff; }
 
 /* media queries  */
-@media (max-width: 991px) {
+@media (max-width: 900px) {
   html {
     font-size: 55%; }
   .service_section .inner_card_section {
     padding-left: 4rem;
-    padding-right: 4rem; } }
-
-@media (max-width: 900px) {
+    padding-right: 4rem; }
   .logo_img_about img {
-    display: none; } }
+    display: none; }
+  .team_section {
+    padding: 2rem 4%; } }
 
 @media (max-width: 768px) {
   nav .mainMenu {
