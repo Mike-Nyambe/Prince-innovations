@@ -52,16 +52,14 @@
         display: inline-block;
         padding: 12px;
     }
-    .home {
-        background-position: left;
-        justify-content: center;
-        text-align: center;
+    .content {
+        width: 100%;
     }
-    .home .content h3 {
-        font-size: 4.5rem;
+    .content h3 {
+        font-size: 2.7rem;
     }
-    .home .content p {
-        font-size: 1.5rem;
+    .content p {
+        font-size: 2.3rem;
     }
     .service_section {
         .inner_card_section {

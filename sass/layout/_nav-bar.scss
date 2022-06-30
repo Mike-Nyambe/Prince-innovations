@@ -49,3 +49,11 @@ nav .mainMenu .closeMenu,
 .header .logo img {
     height: 6rem;
 }
+
+nav.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.795);
+}

@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body onload="slider()">
 
     <!-- header section starts  -->
 
@@ -28,8 +28,8 @@
             <ul class="mainMenu">
                 <li><a class="hover-underline-animation" href="#">Home</a></li>
                 <li><a class="hover-underline-animation" href="about.html">About</a></li>
-                <li><a class="hover-underline-animation" href="#">Services</a></li>
-                <li><a class="hover-underline-animation" href="#">Contact</a></li>
+                <li><a class="hover-underline-animation" href="services.html">Services</a></li>
+                <li><a class="hover-underline-animation" href="contact.html">Contact</a></li>
                 <div class="closeMenu"><i class="fa-solid fa-xmark"></i></div>
             </ul>
         </nav>
@@ -40,16 +40,32 @@
 
     <!-- home section starts  -->
 
-    <section class="home">
-
-        <div class="content">
-            <h3>providing services to enhance delivery of quality products</h3>
-            <p>Prince Innovations, Creating life through technology</p>
-            <a href="#" class="btn primary-btn header-btn">Hire Us Now</a>
-            <a href="#" class="btn secondary-btn header-btn">Get Connected</a>
+    <!-- <div class="home">
+        <img src="images/header1.jpg" id="imgSlider" alt="">
+    </div>
+    <div class="content">
+        <h3>providing services to enhance delivery of quality products</h3>
+        <p>Prince Innovations, Creating life through technology</p>
+        <a href="#" class="btn primary-btn header-btn">Hire Us Now</a>
+        <a href="#" class="btn secondary-btn header-btn">Get Connected</a>
+    </div> -->
+    <div class="banner">
+        <div class="slider">
+            <img src="images/header1.jpg" id="imgSlider" alt=" slider images for the header/banner section">
         </div>
-
-    </section>
+        <div class="img-overlay">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="content">
+                        <h3>providing services to enhance delivery of quality products</h3>
+                        <p>Prince Innovations, Creating life through technology</p>
+                        <a href="#" class="btn primary-btn header-btn">Hire Us Now</a>
+                        <a href="#" class="btn secondary-btn header-btn">Get Connected</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- home section ends -->
     <!-- card section starts -->
@@ -190,157 +206,54 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-12 col-md-4 ">
+            <div class="col-xs-12 col-md-6 col-lg-4 ">
                 <div class="card">
-                    <div class="pic-container">
-                        <img class="pic" src="images/profile-img.jpg" alt="Profile Picture">
-                    </div>
-                    <div class="name">
-                        <span>John Prince</span>
-                    </div>
-                    <div class="title">
-                        <span>C.E.O</span>
-                    </div>
-
-                    <div class="links">
-                        <a href="#" target="_blank" class="team_social_icons">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" target="_blank" class="team_social_icons">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" target="_blank" class="team_social_icons">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
+                    <img src="images/correc-7.jpg" alt="John" style="width:100%">
+                    <h1>John Doe</h1>
+                    <p class="title">Chief Executive Officer</p>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-4 ">
-                <div class="card">
-                    <div class="pic-container">
-                        <img class="pic" src="images/profile-img.jpg" alt="Profile Picture">
-                    </div>
-                    <div class="name">
-                        <span>John Doe</span>
-                    </div>
-                    <div class="title">
-                        <span>Business Consultant</span>
-                    </div>
 
-                    <div class="links">
-                        <a href="#" target="_blank" class="team_social_icons">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" target="_blank" class="team_social_icons">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" target="_blank" class="team_social_icons">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 ">
+                <div class="card">
+                    <img src="images/correc-13.jpg" alt="John" style="width:100%">
+                    <h1>John Doe</h1>
+                    <p class="title">Business Consultant</p>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-4 ">
+            <div class="col-xs-12 col-md-6 col-lg-4 ">
                 <div class="card">
-                    <div class="pic-container">
-                        <img class="pic" src="images/profile-img.jpg" alt="Profile Picture">
-                    </div>
-                    <div class="name">
-                        <span>thengo ruth</span>
-                    </div>
-                    <div class="title">
-                        <span>IT Consultant</span>
-                    </div>
-
-                    <div class="links">
-                        <a href="#" target="_blank" class="team_social_icons">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" target="_blank" class="team_social_icons">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" target="_blank" class="team_social_icons">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4 ">
-                <div class="card">
-                    <div class="pic-container">
-                        <img class="pic" src="images/profile-img.jpg" alt="Profile Picture">
-                    </div>
-                    <div class="name">
-                        <span>blessed zulu</span>
-                    </div>
-                    <div class="title">
-                        <span>Web developer</span>
-                    </div>
-
-                    <div class="links">
-                        <a href="#" target="_blank" class="team_social_icons">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" target="_blank" class="team_social_icons">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" target="_blank" class="team_social_icons">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4 ">
-                <div class="card">
-                    <div class="pic-container">
-                        <img class="pic" src="images/profile-img.jpg" alt="Profile Picture">
-                    </div>
-                    <div class="name">
-                        <span>Mike Nyambe</span>
-                    </div>
-                    <div class="title">
-                        <span>UI / UX designer</span>
-                    </div>
-
-                    <div class="links">
-                        <a href="#" target="_blank" class="team_social_icons">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" target="_blank" class="team_social_icons">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" target="_blank" class="team_social_icons">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-4 ">
-                <div class="card">
-                    <div class="pic-container">
-                        <img class="pic" src="images/profile-img.jpg" alt="Profile Picture">
-                    </div>
-                    <div class="name">
-                        <span>Andrew Chimeya</span>
-                    </div>
-                    <div class="title">
-                        <span>Digital Marketer</span>
-                    </div>
-
-                    <div class="links">
-                        <a href="#" target="_blank" class="team_social_icons">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" target="_blank" class="team_social_icons">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" target="_blank" class="team_social_icons">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </div>
+                    <img src="images/correc-35.jpg" alt="John" style="width:100%">
+                    <h1>John Doe</h1>
+                    <p class="title">Information Technology Consultant</p>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-4 ">
+                <div class="card">
+                    <img src="images/correc-50.jpg" alt="John" style="width:100%">
+                    <h1>John Doe</h1>
+                    <p class="title">Chief Executive Officer</p>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-4 ">
+                <div class="card">
+                    <img src="images/correc-11.jpg" alt="John" style="width:100%">
+                    <h1>John Doe</h1>
+                    <p class="title">Business Consultant</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4 ">
+                <div class="card">
+                    <img src="images/correc-7.jpg" alt="John" style="width:100%">
+                    <h1>John Doe</h1>
+                    <p class="title">Information Technology Consultant</p>
+                </div>
+            </div>
+        </div>
+
     </section>
     <div class="footer_section">
         <div class="row">

@@ -22,6 +22,9 @@
                 font-size: var(--general-font-size);
                 padding: 6px 0;
                 text-transform: capitalize;
+                a {
+                    color: #fff;
+                }
             }
             a:hover {
                 color: #999;
