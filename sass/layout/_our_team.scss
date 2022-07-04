@@ -14,8 +14,12 @@
         width: 20rem;
         object-fit: cover;
     }
+    h1 {
+        text-transform: capitalize;
+    }
     .title {
         color: grey;
         font-size: 18px;
+        text-transform: capitalize;
     }
 }

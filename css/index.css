@@ -422,9 +422,12 @@ nav.active {
     height: 20rem;
     width: 20rem;
     object-fit: cover; }
+  .card h1 {
+    text-transform: capitalize; }
   .card .title {
     color: grey;
-    font-size: 18px; }
+    font-size: 18px;
+    text-transform: capitalize; }
 
 .section-contact .inner-section {
   margin: 8rem 0; }
