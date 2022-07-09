@@ -17,6 +17,7 @@
     },
     "homepage": "https://github.com/Mike-Nyambe/Prince-innovations#readme",
     "devDependencies": {
+        "@parcel/transformer-sass": "^2.6.2",
         "node-sass": "^7.0.1"
     }
 }

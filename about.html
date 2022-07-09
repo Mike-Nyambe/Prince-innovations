@@ -12,7 +12,7 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/index.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -47,10 +47,10 @@
     </section>
     <section class="about_main">
         <div class="row about_main_inner_content">
-            <div class="col-xs-12 col-lg-3">
+            <div class="col-xs-12 col-lg-3" data-aos="fade-right">
                 <h4>who are we?</h4>
             </div>
-            <div class="col-xs-12 col-lg-7 util_who_parags">
+            <div class="col-xs-12 col-lg-7 util_who_parags" data-aos="zoom-in">
                 <p>
                     The Business names with Patents and Companies Registration Agency PACRA chapter 389 of the laws of the Republic of Zambia govern Prince Innovations Limited. For managing and serving the public and private sectors in a variety of commodities, our company
                     offers exceptional.services
@@ -62,42 +62,44 @@
             </div>
         </div>
         <div class="row middle-lg about_main_inner_content">
-            <div class="col-xs-12 col-lg-4">
+            <div class="col-xs-12 col-lg-4" data-aos="fade-right">
                 <h4>our vision</h4>
                 <p>Our goal is to be the best at what we do and to keep our reputation as a company that isas stable as the earth beneath us</p>
             </div>
-            <div class="col-xs-12 col-lg-4 ">
+            <div class="col-xs-12 col-lg-4 " data-aos="zoom-in-up">
                 <div class="logo_img_about">
                     <img src="images/Prince Innovation1.png" alt="an image of prince innovatons logo">
                 </div>
             </div>
-            <div class="col-xs-12 col-lg-4">
+            <div class="col-xs-12 col-lg-4" data-aos="fade-left">
                 <h4>our objective</h4>
                 <p>Our first objective is to provide the most innovative, business-enhancing service to our clients. In addition to having a passion for the products and services we provide, our business,.and our interactions with customers</p>
             </div>
         </div>
-
-        <div class="row about_main_inner_content">
-            <div class="col-xs-12 col-lg-3">
-                <h4>Our values</h4>
-            </div>
-            <div class="col-xs-12 col-lg-7 util_who_parags">
-                <p>
-                    Prince novation Innovations is managed by seasoned engineers and a team with years of experience in business development and marketing. They are assisted by handlers with years of specialized and complementary expertise in finance and accounting. After
-                    many years of experience, the prince innovation Innovations team is skilled at working with partners and clients because they have a thorough awareness of themarket and consumer needs
-                </p>
-                <p>
-                    The goal of Prince Innovation Our reputation is the key to princeInnovation’s longevity in the operations/ construction industry and will continue to be the key to future successes. The end result ofour efforts must be a satisfied customer surpass our
-                    clients’ expectations by being the preferred contractor for safety, value, andquality
-                </p>
+    </section>
+    <section class="section_image">
+    </section>
+    <section class="about-main bottom-util">
+        <div class="row">
+            <div class="row about_main_inner_content">
+                <div class="col-xs-12 col-lg-3" data-aos="fade-right">
+                    <h4>Our values</h4>
+                </div>
+                <div class="col-xs-12 col-lg-7 util_who_parags" data-aos="zoom-in">
+                    <p>
+                        Prince novation Innovations is managed by seasoned engineers and a team with years of experience in business development and marketing. They are assisted by handlers with years of specialized and complementary expertise in finance and accounting. After
+                        many years of experience, the prince innovation Innovations team is skilled at working with partners and clients because they have a thorough awareness of themarket and consumer needs
+                    </p>
+                    <p>
+                        The goal of Prince Innovation Our reputation is the key to princeInnovation’s longevity in the operations/ construction industry and will continue to be the key to future successes. The end result ofour efforts must be a satisfied customer surpass our
+                        clients’ expectations by being the preferred contractor for safety, value, andquality
+                    </p>
+                </div>
             </div>
         </div>
     </section>
-    <section class="section_image">
-
-    </section>
     <div class="footer_section">
-        <div class="row">
+        <div class="row" data-aos="zoom-in">
             <div class="col-xs-12">
                 <div class="row middle-lg foot-util">
                     <div class="col-xs-12 col-md-6 col-lg-3">
@@ -169,7 +171,16 @@
         </div>
     </div>
     <script src="js/index.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            delay: 0,
+            duration: 2000,
+            easing: 'ase-in-sine',
+        });
+    </script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

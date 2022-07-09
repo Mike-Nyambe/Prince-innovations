@@ -12,7 +12,7 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/index.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -94,7 +94,7 @@
                 <div class="section-contact-side-link">
                     <h4 class="h4-co">leave a message</h4>
                 </div>
-                <div class="contact-form">
+                <div class="contact-form" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <form action="">
                         <input type="text" placeholder="Enter full name or company name................" required>
                         <input type="email" placeholder="Enter you email address...." required>
@@ -109,7 +109,7 @@
         </div>
     </section>
     <div class="footer_section">
-        <div class="row">
+        <div class="row" data-aos="zoom-in">
             <div class="col-xs-12">
                 <div class="row middle-lg foot-util">
                     <div class="col-xs-12 col-md-6 col-lg-3">
@@ -181,7 +181,16 @@
         </div>
     </div>
     <script src="js/index.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            delay: 0,
+            duration: 2000,
+            easing: 'ase-in-sine',
+        });
+    </script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

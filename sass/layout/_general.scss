@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 :root {
     --main-color: #ff4500;
-    --black: #13131a;
-    --bg: #010103;
     --border: .1rem solid rgba(255, 255, 255, .3);
     --text-primary: #fff;
     --lower-color: #999;
@@ -26,19 +24,6 @@ html {
     overflow-x: hidden;
     scroll-padding-top: 9rem;
     scroll-behavior: smooth;
-}
-
-html::-webkit-scrollbar {
-    width: .8rem;
-}
-
-html::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-html::-webkit-scrollbar-thumb {
-    background: var(--text-primary);
-    border-radius: 5rem;
 }
 
 body {
